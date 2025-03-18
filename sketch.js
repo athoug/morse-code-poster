@@ -94,7 +94,7 @@ function morseCode(phrase) {
 function displayCode(word, x, y) {
 	if (word === "   ") {
 		yAxis += 42;
-		cummelativeX = 0;
+		cumulativeX = 0;
 		previousLetter = "";
 		xAxis = 0;
 
