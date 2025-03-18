@@ -37,8 +37,8 @@ const morseMap = {
 	9: "----.",
 	0: "-----",
 };
-const margin = 20;
-const spacing = 10;
+const margin = 50;
+const spacing = 50;
 let cumulativeX = 0;
 let previousLetter = "";
 let xAxis = 0;
@@ -49,7 +49,7 @@ let codePhrase = "";
 let author = "";
 
 function setup() {
-	createCanvas(800, 600);
+	createCanvas(window.innerWidth, window.innerHeight);
 
 	generateRandomQuote();
 
@@ -130,7 +130,7 @@ function displayAuthor(x, y) {
 	textAlign(LEFT, TOP);
 	textSize(22);
 	fill(60);
-	text(`- ${author}`, width / 1.4, height / 1.2);
+	text(`- ${author}`, margin, y + lastY - 180);
 }
 
 function getTextHeight(txt, maxWidth) {
