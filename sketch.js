@@ -60,7 +60,7 @@ function setup() {
 function draw() {
 	background(30);
 
-	displayText(textPhrase, 0, 0, 300);
+	displayText(textPhrase, 0, 0, 400);
 
 	for (let i = 0; i < code.length; i++) {
 		displayCode(code[i], xAxis * spacing + margin, 0 + margin);
